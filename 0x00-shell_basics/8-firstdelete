@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo find /tmp/my_first_directory -type f betty
