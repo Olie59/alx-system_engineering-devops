@@ -1,0 +1,2 @@
+#!/bin/bash
+awk 'NR>1{count[$1]++} END{for(host in count) print host, count[host]}' FS='\t' nasa_19950801.tsv | sort -k2 -rn | head -n11 | awk '{print $1}'

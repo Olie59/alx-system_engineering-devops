@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -iname "*.gif" -exec sh -c 'echo "$(basename "{}" .gif)"' \; | LC_ALL=C sort -f; echo
